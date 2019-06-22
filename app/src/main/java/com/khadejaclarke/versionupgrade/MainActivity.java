@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void showUpdateDialog(){
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle("App version upgrade")
-                .setMessage("Would you like to upgrade now or later?")
+                .setTitle("Software version update")
+                .setMessage("Would you like to update now or later?")
                 .setPositiveButton("Now", (dialog, which) -> progressBar.setVisibility(View.VISIBLE))
                 .setNegativeButton("Later", (dialog, which) -> textView.setVisibility(View.VISIBLE))
                 .setIcon(android.R.drawable.ic_dialog_alert)
